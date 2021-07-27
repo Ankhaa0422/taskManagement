@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: #A0A0A0;
+  border-radius: 3px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -31,8 +40,57 @@
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
-  }
+  }ant-popover-title
   to {
     transform: rotate(360deg);
   }
+}
+.ant-menu-item a {
+    color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.ant-input-affix-wrapper {
+  border: none;
+}
+
+.ant-input-affix-wrapper-focused {
+  box-shadow: none !important;
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border: none !important;
+}
+html {
+  --antd-wave-shadow-color: none
+}
+.ant-menu-item-selected {
+  color: #000;
+  font-weight: 800;
+}
+.ant-menu-item-selected {
+  color: #000;
+  font-weight: 600;
+  background-color: #fff !important;
+}
+.ant-menu-item::after {
+  border-right: 3px solid #006666 !important;
+}
+.ant-btn:hover {
+  color: "red !important";
+}
+
+.fc .fc-daygrid-day-number {
+  color: #000;
+}
+
+.ant-popover-title {
+  font-weight: 700 !important;
+}
+
+.ant-input[disabled] {
+  color: #000 !important;
+  background-color: transparent !important;
+  cursor:text !important;
+  opacity: 1 !important;
+  border:none !important;
 }
